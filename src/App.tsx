@@ -1,17 +1,12 @@
-import { useContext } from "react";
-import { AppContext } from "./app-context/AppContext";
+// Components
+import Layout from "./components/layout/Layout";
+import Routers from "./components/routers/Routers";
 
 function App() {
-  const { userName, userEmail, setUserName } = useContext(AppContext)
-   
-  // setTimeout(() => {
-  //   setUserName?.('')
-  // }, 2000)
-
   return (
-    <div className="App">
-        <h1>DEV CONNECT - {userName} - {userEmail}</h1>
-    </div>
+    <Layout>
+      <Routers/>
+    </Layout>
   );
 }
 
