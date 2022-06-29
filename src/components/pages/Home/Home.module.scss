@@ -1,0 +1,29 @@
+@import '../../../scss/mixins/breakpoints';
+@import '../../../scss/functions';
+@import '../../../scss/variables';
+
+.expoloreBtn{
+    background-color: red;
+    color: $white;
+    padding: 20px;
+    border: none
+}
+
+
+@include media-breakpoint-up(sm) {
+
+}
+@include media-breakpoint-up(md) {
+
+}
+@include media-breakpoint-up(lg) {
+    .expoloreBtn{
+        background-color: $primary;
+    }   
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) { 
+
+}
