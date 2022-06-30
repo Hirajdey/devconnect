@@ -4,15 +4,17 @@
 
 // Desktop First Approach
 
-.main{
-    min-height: 100vh;
-    padding: 40px 0 50px;
-    margin-top: 55px;
-    .serviceCard{
-        margin-bottom: 40px;
+.row{
+    justify-content: space-between;
+    .leftPanel{
+        padding-left: 0;
+        max-width: 280px;
+    }
+    .rightPanel{
+        padding-right: 0;
+        max-width: 300px;
     }
 }
-
 
 @include media-breakpoint-down(md) {
 

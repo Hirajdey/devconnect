@@ -8,6 +8,7 @@
 //
 
 $white:    #fff !default;
+$darkGray: #262626 !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -38,9 +39,10 @@ $grays: map-merge(
 );
 
 $maroon:   #7B113A !default;
+$lightGray:  #414141 !default;
 $oceanBlue: #1597BB !default;
 $navyBlue: #08123b !default;
-$blue:    #1053ff !default;
+$blue:    #2874f0 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -56,6 +58,7 @@ $colors: () !default;
 $colors: map-merge(
   (
     "maroon":     $maroon,
+    "lightGray": $lightGray,
     "oceanBlue":  $oceanBlue,
     "navyBlue" :  $navyBlue,
     "blue":       $blue,
@@ -77,6 +80,7 @@ $colors: map-merge(
   
 $primary:       $blue !default;
 $secondary:     $navyBlue !default;
+$cardBg:        $lightGray !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -163,7 +167,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $darkGray !default;
 $body-color:                $body-black !default;
 
 // Links

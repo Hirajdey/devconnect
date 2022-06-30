@@ -1,0 +1,25 @@
+@import '../../scss/mixins/breakpoints';
+@import '../../scss/functions';
+@import '../../scss/variables';
+
+// Desktop First Approach
+
+.siteFooter{
+    padding: 50px 0;
+    min-height: 400px;
+    background: rgb(2,0,36);
+    background: linear-gradient(307deg, rgba(2,0,36,1) 13%, rgba(160,18,58,1) 50%, rgba(36,187,196,1) 100%);
+}
+
+@include media-breakpoint-down(md) {
+
+}
+@include media-breakpoint-down(lg) {
+
+}
+@include media-breakpoint-down(xl) {
+
+}
+@include media-breakpoint-down(xxl) {
+
+}
