@@ -1,0 +1,29 @@
+@import '../../../../scss/mixins/breakpoints';
+@import '../../../../scss/functions';
+@import '../../../../scss/variables';
+
+// Desktop First Approach
+
+.main{
+    background-color: $cardBg;
+    height: 600px;
+    width: 100%;
+    border-radius: 8px;
+    position: sticky;
+    top:80px;
+}
+
+
+
+@include media-breakpoint-down(md) {
+
+}
+@include media-breakpoint-down(lg) {
+
+}
+@include media-breakpoint-down(xl) {
+
+}
+@include media-breakpoint-down(xxl) {
+
+}

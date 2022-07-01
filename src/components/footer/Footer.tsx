@@ -1,10 +1,11 @@
+import classnames from 'classnames'
 
 // Styles
 import Styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <footer className={Styles.siteFooter}>
+    <footer className={classnames(Styles.siteFooter, "gradient-animated-bg")}>
       <div className='container'>
         <div className='row'> 
           <div className='col'>

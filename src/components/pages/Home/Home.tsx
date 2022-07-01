@@ -8,6 +8,8 @@ import Styles from './Home.module.scss'
 import { AppContext } from "../../../app-context/AppContext";
 import PageLayout from '../../utils/page-layout/PageLayout';
 import ServiceCard from '../../common/service-card/ServiceCard';
+import FilterPanel from './filter-panel/FilterPanel';
+import BgBubbleAnimated from '../../utils/bg-bubble-animated/BgBubbleAnimated';
 
 const Home = () => {
   const { userName, userEmail, setUserName } = useContext(AppContext)
@@ -19,7 +21,9 @@ const Home = () => {
   return (
     <section className={Styles.main}>
       <PageLayout 
-        leftPanel={<>LEFT COLL</>}
+        leftPanel={
+          <FilterPanel/>
+        }
         centerPanel={
           <>
             <ServiceCard 
@@ -35,6 +39,7 @@ const Home = () => {
         }
         rightPanel={<>LEFT COL</>}
       />
+      <BgBubbleAnimated/>
     </section>
   )
 }

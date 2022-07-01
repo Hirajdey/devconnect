@@ -5,7 +5,7 @@ import Styles from './Header.module.scss';
 
 const Header = () => {
   return (
-    <header className={Styles.siteHeader}>
+    <header className={classnames(Styles.siteHeader, "gradient-animated-bg")}>
         <div className={classnames('container', Styles.container)}>
             <div className={classnames('row', Styles.row)}>
                 <div className='col'>SiteLOGO</div>
